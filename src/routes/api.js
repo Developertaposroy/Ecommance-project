@@ -38,7 +38,7 @@ router.get('/VerifyLogin/:email/:otp', UserController.VerifyLogin)
 router.get('/UserLogout', UserController.UserLogout)
 
 //Profile
-router.get('/CreateProfile',AuthVerification, ProfileController.CreateProfile)
+router.post('/CreateProfile',AuthVerification, ProfileController.CreateProfile)
 router.get('/ReadProfile', AuthVerification, ProfileController.ReadProfile)
 router.get('/UpdateProfile',AuthVerification, ProfileController.UpdateProfile)
 

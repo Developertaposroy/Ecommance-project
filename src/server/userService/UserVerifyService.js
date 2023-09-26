@@ -1,6 +1,4 @@
 
-
-
 const UserVerifyService = async (code, email, DataModel) => {
     if (code===0){
         return 0;
@@ -12,10 +10,6 @@ const UserVerifyService = async (code, email, DataModel) => {
     }
 
 };
-// const UserVerifyService =async (code,email,DataModel)=>{
-//    const res= await DataModel.find({email:email, otp:code}).count('total')
-//     console.log(res)
-// }
 
  module.exports=UserVerifyService
 
